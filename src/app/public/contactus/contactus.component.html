@@ -1,0 +1,34 @@
+<div class="container" style="padding-top: 120px;">
+    <h3>Contactanos</h3>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius culpa veniam voluptate! Sequi quasi impedit culpa ad commodi dicta exercitationem qui excepturi facilis ipsa itaque debitis, maxime error quia doloribus?
+    </p>
+    <div class="row">
+        <div class="col-4">
+            <form [formGroup]="contactusForm">
+                <div formGroupName="persona">
+                    <div class="form-group">
+                        <input type="text" formControlName="nombre" class="form-control" placeholder="Ingrese Nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" formControlName="apellido" class="form-control" placeholder="Ingrese Apellido">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="mail" formControlName="correo" class="form-control" placeholder="Ingrese Correo">
+                </div>
+                <div class="form-group">
+                    <textarea formControlName="comentarios" rows="3" class="form-control" placeholder="Ingrese aca sus comentarios"></textarea>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+            
+        </div>
+        <div class="col-8">
+            aqui va el mapa
+        </div>
+    </div>
+</div>
